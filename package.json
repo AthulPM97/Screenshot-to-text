@@ -2,10 +2,11 @@
   "name": "screenshot-to-text",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/app.js",
+    "dev": "ts-node --esm ./src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +16,10 @@
     "@types/node": "^18.15.10",
     "dotenv": "^16.0.3",
     "js-yaml": "^4.1.0",
-    "langchain": "^0.0.41",
     "openai": "^3.2.1",
     "pinecone": "^0.1.0",
     "serpapi": "^1.1.1",
+    "tesseract.js": "^4.1.0",
     "typescript": "^5.0.2"
   },
   "devDependencies": {
